@@ -1,3 +1,4 @@
-<template>
-  <RouterView />
+<template lang="pug">
+main.m-15
+  RouterView
 </template>
