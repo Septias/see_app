@@ -4,7 +4,7 @@ import App from './App.vue'
 import generatedRoutes from '~pages'
 
 // import '@unocss/reset/tailwind.css'
-import './styles/main.css'
+import './styles/main.sass'
 import 'uno.css'
 
 const routes = setupLayouts(generatedRoutes)

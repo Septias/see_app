@@ -25,9 +25,9 @@ const points = [
 
 <template lang="pug">
 slide
-  h1.text-5xl.mb-10 Fundamentals of OOP
+  h1.mb-10 Fundamentals of OOP
   .grid.grid-cols-3.gap-4
-    .rounded-xl.bg-pink-300.p-5(v-for="point in points")
+    .rounded-xl.p-5(v-for="point in points")
       h2.text-xl {{point.title}}
       p.text-sm {{point.content}}
 </template>

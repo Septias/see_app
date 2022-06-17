@@ -5,9 +5,17 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Closedtypeex: typeof import('./examples/closedtypeex.md')['default']
+    Depthtypex: typeof import('./examples/depthtypex.md')['default']
+    Example: typeof import('./components/example.vue')['default']
+    Objectexample: typeof import('./examples/objectexample.md')['default']
+    Objpolyexample: typeof import('./examples/objpolyexample.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Slide: typeof import('./components/slide.vue')['default']
+    Slide2sides: typeof import('./components/slide2sides.vue')['default']
+    Variantsubtyping: typeof import('./examples/variantsubtyping.md')['default']
+    Widthsubtyping: typeof import('./examples/widthsubtyping.md')['default']
   }
 }
 

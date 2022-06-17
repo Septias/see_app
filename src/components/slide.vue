@@ -1,10 +1,14 @@
 <script lang="ts" setup>
 const route = useRoute()
 const router = useRouter()
-const id = parseInt(route.fullPath[route.fullPath.length - 1])
+let id = parseInt(route.fullPath[route.fullPath.length - 1])
 
 const listener = (e: any) => {
   if (e.key === 'ArrowLeft')
+    /* id -= 1
+    if (id < 0) {
+
+    } */
     router.push(`/slide${id - 1}`)
 
   else if (e.key === 'ArrowRight')

@@ -1,6 +1,6 @@
 <template lang="pug">
 slide
-  h1.text-5xl Struktur
+  h1 Struktur
   ul.text-xl
     li Einführung in OOP
     li OCaml Objects

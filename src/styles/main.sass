@@ -1,0 +1,47 @@
+@import './markdown.css'
+
+html,
+body,
+#app 
+  height: 100%
+  margin: 0
+  padding: 0
+
+h1
+  @apply text-pink-600
+
+h2
+  @apply border-b-2 border-pink-500
+
+ul 
+  li
+    @apply pb-2 text-xl
+  
+span
+  @apply font-bold
+
+code
+  @apply bg-gray-300 rounded px-1 leading-none
+
+.font-bold
+  @apply text-pink-500 
+
+
+// taken from w3schools
+ul 
+  list-style: none /* Remove default bullets */
+
+
+ul li::before 
+  content: "\2022"  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  @apply color-pink-600
+  font-weight: bold /* If you want it to be bold */
+  display: inline-block /* Needed to add space between the bullet and the text */
+  width: 1em /* Also needed for space (tweak if needed) */
+  margin-left: -1em /* Also needed for space (tweak if needed) */
+
+
+:root 
+  --bg-explanation: #299D61
+  --color-light: #9ACE99
+  --accent: #0a2e1b
