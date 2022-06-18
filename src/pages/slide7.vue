@@ -29,7 +29,7 @@ slide.flex
         ul
           li Mit Depth Subtyping können wir ein Objekt A zu einem Objekt B machen, wenn die Methoden sicher verwandelt werden können.
 
-    h2 Polymorphis Variant Subtyping
+    h2 Polymorphic Variant Subtyping
     slide2sides
       template(v-slot:left)
         variantsubtyping

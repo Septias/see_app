@@ -7,9 +7,8 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Badexample1: typeof import('./examples/badexample1.md')['default']
     'Badexample1 copy': typeof import('./examples/badexample1 copy.md')['default']
-    'Badexample1 copy 2': typeof import('./examples/badexample1 copy 2.md')['default']
+    'Badexample1 copy 2': typeof import('./examples/badexample3.md')['default']
     Badexample2: typeof import('./examples/badexample2.md')['default']
-    Badexample3: typeof import('./examples/badexample3.md')['default']
     Closedtypeex: typeof import('./examples/closedtypeex.md')['default']
     Depthtypex: typeof import('./examples/depthtypex.md')['default']
     Example: typeof import('./components/example.vue')['default']

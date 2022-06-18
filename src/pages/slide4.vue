@@ -9,16 +9,16 @@ slide.flex
       ul(class="w-1/2")
         //li Objekte und Klassen sind eine Möglichkeit von OCaml OOP anzuwenden
         li Objekte haben nicht wie andere Sprachen Klassentypen, sondern werden durch ihren
-          span.font-bold  Objekttyp
+          span  Objekttyp
           |  beschrieben
         li Der
-          span.font-bold  Objekttype
+          span Objekttype
           |  wird durch die bereitgestellten Methoden festgelegt
         li
-          span.font-bold Methoden
+          span Methoden
           |  werden mit dem #-Operator ausgeführt
         li
-          span.font-bold Objektekontruktoren
+          span Objektekontruktoren
           |  müssen separat bereitgstellt werden
 </template>
 
