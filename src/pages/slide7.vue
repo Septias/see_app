@@ -1,9 +1,9 @@
 <template lang="pug">
-slide.flex
+slide
   div.flex.flex-col
     h1 Subtyping
     blockquote.text-2xl
-      Subtyping Subtyping is a central concept in object-oriented programming. It governs when an object with one type A can be used in an expression that expects an object of another type B
+      | Subtyping is a central concept in object-oriented programming. It governs when an object with one type A can be used in an expression that expects an object of another type B
 
     h2 Width Subtyping
     slide2sides
@@ -17,7 +17,8 @@ slide.flex
             | Der neue Operator
             |
             code ':>'
-            |  erlaubt es nun ein Objekt A zu einem Objekt B zu machen. Hier squar -> shape
+            |  erlaubt es nun ein Objekt A zu einem Objekt B zu machen.
+          li Hier squar -> shape
 
     h2 Depth Subtyping
     slide2sides

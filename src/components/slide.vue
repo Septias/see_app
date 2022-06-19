@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const route = useRoute()
 const router = useRouter()
-let id = parseInt(route.fullPath[route.fullPath.length - 1])
+const id = parseInt(route.name.substring(5))
 
 const listener = (e: any) => {
   if (e.key === 'ArrowLeft')

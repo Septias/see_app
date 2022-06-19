@@ -1,25 +1,34 @@
 <template lang="pug">
-slide.flex
+slide
   div.flex.flex-col
-    h1 Row Poly vs. Subtyping
+    h1 Row Polymorphismus vs. Subtyping
 
-    slide2sides
+    //slide2sides
       template(v-slot:left)
         h2 Row Poly
 
       template(v-slot:right)
         h2 Subtyping
+    slide2sides
+      template(v-slot:left)
+        example
+          proargpoly
+
+      template(v-slot:right)
         ul
-          li
-            | Die Syntax mit
-            |
-            code {...}
-            |  ist nur in Methoden von Objekten erlaubt und erzeugt ein neues Objekt
-          li
-            span Methodenimplementationen
-            |
-            | können nicht durch die Syntax von
-            |
-            code {...}
-            |  verändert werden
+          li In den meisten Fällen wird Row Polymorphismus verwendet, da keine explizite Nötigung notwendig ist
+          li Der implizierte Typ wird aus dem Objekttyp generiert, sodass alle zusätzlichen Methoden erhalten bleiben
+    p Wenn man das selbe mit einem geschlossenen Objekttyp und Subtyping versucht geht das nicht:
+    example
+      subtypingbad
+
+    p Mit Row Polymorphismus kann man keine Objekte mit verschiedenen Typen in eine Liste packen
+    example
+      listexample
+    p Das selbe gilt auch für Referenzen:
+    example
+      refexample
+    p In diesen Fällen muss man Subtyping verwenden
+    example
+      subtypinggood
 </template>

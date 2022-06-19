@@ -1,5 +1,5 @@
 <template lang="pug">
-slide.flex
+slide
   div.flex.flex-col
     h1 Subtyping > Variance
     h2 Variance
@@ -9,8 +9,15 @@ slide.flex
           variance
       template(v-slot:right)
         ul
-          li Typen die aus Objekttypen kontruiert wurden können auch genötigt werden
-          li We say that 'a list is covariant (in 'a), while 'a array is invariant.
+          li Typen die aus Objekttypen konstruiert wurden, können auch genötigt werden
+          li Eine 'a list ist covariant (in 'a)
+          li Ein
+            |
+            |
+            code 'a array
+            |  ist
+            |
+            span invariant.
     slide2sides
       template(v-slot:left)
         example

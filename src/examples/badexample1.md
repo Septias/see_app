@@ -1,12 +1,4 @@
 ```ocaml
-type shape = Circle of { radius : int } | Line of { length: int };;
-type shape = Circle of { radius : int; } | Line of { length : int; }
-let is_barbell = function
-| [Circle {radius=r1}; Line _; Circle {radius=r2}] when r1 = r2 -> true
-| _ -> false;;
-val is_barbell : shape list -> bool = <fun>
-```
-```ocaml
 type shape = < variant : repr >
 and circle = < variant : repr; radius : int >
 and line = < variant : repr; length : int >

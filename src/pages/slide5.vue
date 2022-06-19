@@ -1,12 +1,12 @@
 <template lang="pug">
-slide.flex
+slide
   div.flex.flex-col
     h1 Objekt-polymorphismus und Subtyping
     .flex.h-100
       div(class="w-1/2")
         h2.heading Objektpolymorphismus
         ul.pl-5
-          li Row Polymorphism
+          li Row Polymorphismus
       div.divider
       div(class="w-1/2")
         h2.heading Subtyping

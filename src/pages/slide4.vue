@@ -1,7 +1,7 @@
 <template lang="pug">
-slide.flex
+slide
   div.flex.flex-col
-    h1 Objects in OCaml
+    h1 Objekte in OCaml
     .flex.h-100
       div(class="w-1/2")
         example
@@ -11,15 +11,13 @@ slide.flex
         li Objekte haben nicht wie andere Sprachen Klassentypen, sondern werden durch ihren
           span  Objekttyp
           |  beschrieben
-        li Der
-          span Objekttype
+        li
+          | Der
+          span  Objekttype
           |  wird durch die bereitgestellten Methoden festgelegt
         li
           span Methoden
-          |  werden mit dem #-Operator ausgeführt
-        li
-          span Objektekontruktoren
-          |  müssen separat bereitgstellt werden
+          |  werden mit dem #-Operator aufgerufen
 </template>
 
 <!--

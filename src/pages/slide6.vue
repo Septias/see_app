@@ -1,5 +1,5 @@
 <template lang="pug">
-slide.flex
+slide
   div.flex.flex-col
     h1 Row Polymorphism
 
