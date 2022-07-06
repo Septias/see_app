@@ -1,4 +1,4 @@
 <template lang="pug">
-main.p-15.h-screen.box-border
+main
   RouterView
 </template>
